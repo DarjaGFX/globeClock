@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobeClock System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="ui-layer">
+    <header class="glass-panel">
+      <h1>GLOBE_CLOCK_SYS_V1</h1>
+      <div class="system-status">STATUS: ONLINE</div>
+    </header>
+
+    <div id="search-panel" class="glass-panel">
+      <label for="time-input">REVERSE_LOOKUP_TIME:</label>
+      <div class="input-group">
+        <input type="time" id="time-input" />
+        <button id="find-btn">EXECUTE</button>
+      </div>
+    </div>
+
+    <div id="info-panel" class="glass-panel hidden">
+      <h2 id="info-city">CITY_NAME</h2>
+      <div id="info-time">00:00:00</div>
+      <div id="info-meta">LAT: 00.00 | LON: 00.00</div>
+    </div>
+
+    <div id="controls-help" class="glass-panel">
+      <p>[LMB] SPIN // [SCROLL] ZOOM</p>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
