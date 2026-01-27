@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "8080:80"
+      - "${GLOBE_APP_PORT:-8080}:80"
     volumes:
       - ./src:/app/src
     labels:
